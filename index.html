@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome for LinkedIn Icon -->
+    <script src="https://kit.fontawesome.com/YOUR-FONTAWESOME-KIT.js" crossorigin="anonymous"></script>
+
+<style>
+        /* General Styling */
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #333;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+        }
+
+        /* Updated Background Colors */
+        .navbar, .section-divider, .footer {
+            background-color: #1E3A4C !important;
+        }
+
+        /* Navbar */
+        .navbar {
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 600;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            background-color: white;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #074166;
+        }
+
+        /* Section Divider */
+        .section-divider {
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            padding: 15px 20px;
+            text-align: left;
+            margin-top: 2%;
+        }
+
+        /* Content Sections */
+        .content-section {
+            background-color: white;
+            padding: 50px 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Contrast for Readability */
+        .content-section p {
+            font-size: 16px;
+            color: #2a2e30  /* Soft, readable dark grayish-blue */
+        }
+
+        .content-section strong {
+            font-size: 18px;
+            font-weight: 700;
+            display: block;
+            margin-top: 15px;
+            color: #013352; /* Strong contrast */
+        }
+
+    .btn-primary {
+  background-color: #074166;
+  border-color: #074166;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #012A44;
+  border-color: #012A44;
+}
+
+
+   /* Footer */
+.footer {
+    background-color: #1E3A4C;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns content to the left */
+}
+
+/* Email & LinkedIn */
+.footer p {
+    margin: 0; /* Remove extra margin */
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.footer a i {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+
+        /* Ensure responsiveness */
+        .container {
+            max-width: 900px !important;
+            margin: 0 auto !important;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+            text-align: left !important;
+        }
+    </style> 
+<script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xHZqgL4xQHKPOtN6F5EtobeLBugExbArEckDwc7txi0', {
+        api_host: 'https://us.i.posthog.com',
+        person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
+    })
+</script>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Danielle Phillips</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1> Curious Mind. Strategic Brain. UX Whisperer.</h1>
+            <p>Driven by curiosity. Backed by evidence. Obsessed with making tech feel less... tech-y</p>
+        </div>
+    </section>
+
+<!-- Portfolio Sections -->
+    <div class="container py-5" id="portfolio">
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="images/perf_profiler.png" class="card-img-top" alt="SaaS Profiler">
+                    <div class="card-body">
+                        <h5 class="card-title">SaaS System Profiler</h5>
+                        <p class="card-text">Lead Researcher</p>
+                        <p>Transformed complex legacy system profiling into intuitive, cloud-based profiler.</p>
+                        <a href="login.html" class="btn btn-primary" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="images/oneapi-config.png" class="card-img-top" alt="Cross Platform Developer Kit">
+                    <div class="card-body">
+                        <h5 class="card-title">OneAPI Web Configurator</h5>
+                        <p class="card-text">Design & Research Lead | Interaction Design
+Simplified multi-platform toolchain setup with modular, scalable interaction models.</p>
+                        <a href="login.html" class="btn btn-primary" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div> -->
+ <!-- Project 2 --> 
+<div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="images/ai_ware0.jpg" class="card-img-top" alt="Cross Platform Developer Kit">
+                    <div class="card-body">
+                        <h5 class="card-title">AI Workloads + Competitive Analysis</h5>
+                        <p class="card-text">Lead Researcher</p>
+                        <p>Elevated Intel’s AI profiling tool to stay competitive as SaaS through actionable research.</p>
+                        <a href="login2.html" class="btn btn-primary" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Project 3
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="images/dm_landing_new.png" class="card-img-top" alt="Device Manager for IOT">
+                    <div class="card-body">
+                        <h5 class="card-title">Device Manger for IOT</h5>
+                        <p class="card-text">Unified IoT Control Interface</p>
+<p>Design & Research Lead | Interaction Design</p>
+<p>Enabled seamless control of IoT hardware ecosystems through cohesive UI architecture.</p>
+                        <a href="login3.html" class="btn btn-primary" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- Section Divider (Before About) -->
+    <div id="about" class="section-divider">
+        <div class="container">
+            <h2>About Me</h2>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="content-section">
+        <div class="container">
+            <p><strong>Where I started.  The origin story</strong>I've always been fascinated by people—what makes us tick, click, and occasionally rage-quit. That curiosity pulled me into the wild west of the early internet, where I got my start with one of the OG internet service providers. That’s where I first tangled with web design, information architecture, and the delicate art of getting humans to not smash their keyboards.
+<span>Spoiler:</span> I didn’t stop there.</p>
+            <p><strong>Foundational Expertise & Career Evolution</strong>At Synopsys, I spent six years shaping SolvNet into an award-winning support portal (IEEE Best-in-Class, no big deal). It sharpened my B2B chops and made me fluent in the fine print of self-service design.
+Then came Intel—a decade of diving deep into developer experience, AI systems, and enterprise tools.</p>
+            <p><strong>What Gets Me Up in the Morning.</strong> I'm driven by the challenge of uncovering the “why” behind user behavior—what motivates people, what frustrates them, and how those insights can shape better experiences. I'm hooked on the "why."
+Why do users ghost your product? Why do developers curse at your interface? Why do people click everything except the big obvious button? Finding those answers fuels my work—and makes your product better. I bridge user needs with business goals so you don't have to.</p>
+            <p><strong>What value I add.</strong>I specialize in translating research into actionable strategy. By applying mixed-method research, journey mapping, and usability testing, I help product teams build experiences that are intuitive, efficient, and scalable. My work improves onboarding, streamlines workflows, and boosts adoption—bridging the gap between user needs and product goals. I bring clarity, structure, and a user-first mindset to every stage of development.</p>
+        </div>
+    </section>
+
+    <!-- Section Divider (Before Principles) -->
+    <div class="section-divider">
+        <div class="container">
+            <h2>Research and Design Ethos</h2>
+        </div>
+    </div>
+
+    <!-- Principles Section -->
+    <section class="content-section">
+        <div class="container">
+            <p><strong>Human-Centered Design</strong>Design starts with people. I prioritize real user needs, eliminate friction, and advocate for intuitive, inclusive experiences that align with how people naturally think and work..</p>
+            <p><strong>ResearchOps</strong>I blend qualitative feels with quantitative facts, building research that scales and sticks. Because hunches are cute, but data gets it done.
+
+</p>
+            <p><strong>Storytelling</strong>Research is only impactful when it resonates.  I craft stories that bring user experiences to life, getting teams aligned and amped to build the right thing.</p>
+<p><strong>Collaboration & Influence</strong>I play well with product, engineering, and design. Through mentoring, facilitation, and the occasional strategic post-it note, I help turn insights into “aha” moments.</p>
+        </div>
+    </section>
+
+  <!-- Footer -->
+<footer class="footer" id="contact">
+    <div class="container">
+        <p>
+            Contact me at <a href="daniphilpdx@gmail.com">daniphilpdx@gmail.com</a>
+            <a href="https://www.linkedin.com/in/daniellephillips-ux/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </p>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
